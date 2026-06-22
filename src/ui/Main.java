@@ -37,5 +37,12 @@ public class Main {
                 System.out.println(t);
             }
         }
+        //Filtrado: Guias turisticos con mas de 7 años de experiencia
+        System.out.println("\n=== Guias con mas de 7 años de experiencia ===");
+        for (Tour t : tours) {
+            if (t.getGuiaTuristico().getExperiencia() > 7) {
+                System.out.println(t.getGuiaTuristico());
+            }
+        }
     }
 }

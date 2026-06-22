@@ -1,5 +1,5 @@
-Ruta Gastronómica Llanquihue;Gastronómico;150
-Paseo Lacustre Frutillar;Lacustre;120
-Excursión Cultural Puerto Varas;Cultural;101
-Tour Personalizado Volcán Osorno;Aventura;79
-Ruta del Queso Llanquihue;Gastronómico;66
+Ruta Gastronómica Llanquihue;Gastronómico;150;Nicolas Salgado;Guía Gastronómico;5;Av. Frutillar 123;Llanquihue;Llanquihue
+Tour por lagos Frutillar;Lacustre;120;Cristian Perez;Guia de lagos;3;Calle Los Lagos 456;Frutillar;Frutillar
+Excursión Cultural Puerto Varas;Cultural;101;Fabrizio Copano;Guia de excursion;10;Av. Principal 78;Puerto Varas;Puerto Varas
+Tour de aventura Osorno;Aventura;79;Sergio Freire;Guia de aventura;9;Calle Osorno 321;Osorno;Osorno
+Ruta del Queso Llanquihue;Gastronómico;66;Juan Lopez;Guia Gastronómico;12;Camino Rural 99;Llanquihue;Llanquihue
