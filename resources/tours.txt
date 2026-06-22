@@ -1,0 +1,5 @@
+Ruta Gastronómica Llanquihue;Gastronómico;150
+Paseo Lacustre Frutillar;Lacustre;120
+Excursión Cultural Puerto Varas;Cultural;101
+Tour Personalizado Volcán Osorno;Aventura;79
+Ruta del Queso Llanquihue;Gastronómico;66
