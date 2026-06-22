@@ -38,7 +38,7 @@ Este proyecto corresponde a la actividad sumativa de la Semana 5 de la asignatur
 1. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/nicosalgadogit/LlanquihueTourApp
+git clone https://github.com/nicosalgadogit/LlanquihueTourApp.git
 ```
 
 2. Abre el proyecto en IntelliJ IDEA.
