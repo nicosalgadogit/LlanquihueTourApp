@@ -47,12 +47,12 @@ public class GestorDatos {
                 Direccion dir = new Direccion(calle, ciudad, comuna);
                 Tour tour = new Tour(nombre, tipo, reservas, guia, dir);
 
-                /**
-                 * Crea el objeto y lo agrega a la colección
-                 */
+                // Crea el objeto y lo agrega a la colección
+
                 tours.add(tour);
             }
 
+            // catchs en caso de los errores (Try-catch)
         } catch (FileNotFoundException e) {
             System.out.println("Error Archivo no encontrado");
             System.out.println("Error especifico: " + e.getMessage());
