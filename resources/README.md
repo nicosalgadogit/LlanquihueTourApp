@@ -42,7 +42,7 @@ git clone https://github.com/nicosalgadogit/llanquihue-tour
 
 ---
 
-**Repositorio GitHub:** \[https://github.com/nicosalgadogit/llanquihue-tour] 
+**Repositorio GitHub:** \[https://github.com/nicosalgadogit/LlanquihueTourApp] 
 **Fecha de entrega:** \[22/06/2026]
 
 ---
