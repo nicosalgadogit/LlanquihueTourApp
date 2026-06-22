@@ -89,7 +89,7 @@ public class Tour {
 
     /**
      *
-     * To string para devolver la informacion de la persona en formato de texto
+     * To string para devolver la informacion del tour en formato de texto
      *
      */
 

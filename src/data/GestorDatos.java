@@ -21,10 +21,12 @@ public class GestorDatos {
      */
 
     public ArrayList<Tour> cargarTours(String rutaArchivo) {
+        // Crea la lista donde se guardaran los tours
         ArrayList<Tour> tours = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
             String linea;
+            // Recorre el archivo linea por linea
             while ((linea = br.readLine()) != null) {
                 if (linea.isBlank()) continue;
 
@@ -33,6 +35,7 @@ public class GestorDatos {
 
                 String[] datos = linea.split(";");
 
+                // Datos del guia turistico
                 String nombre = datos[0];
                 String tipo = datos[1];
                 int reservas = Integer.parseInt(datos[2]);
@@ -43,11 +46,13 @@ public class GestorDatos {
                 String ciudad = datos[7];
                 String comuna = datos[8];
 
+                // Crea los objetos con los datos leidos
+
                 GuiaTuristico guia = new GuiaTuristico(nombreGuia, cargoGuia, expGuia);
                 Direccion dir = new Direccion(calle, ciudad, comuna);
                 Tour tour = new Tour(nombre, tipo, reservas, guia, dir);
 
-                // Crea el objeto y lo agrega a la colección
+                // Agrega el tour a la coleccion
 
                 tours.add(tour);
             }
