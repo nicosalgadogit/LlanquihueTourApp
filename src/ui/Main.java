@@ -1,48 +1,23 @@
 package ui;
 
-import data.GestorDatos;
-import model.Tour;
+import data.GestorServicios;
+import model.ServicioTuristico;
 import java.util.ArrayList;
 
 /**
- * Clase Main que se encarga de cargar los datos de Tour desde el archivo .txt y los muestra en consola en forma de texto
+ * Clase Main que se encarga de crear los servicios turísticos
+ * mediante GestorServicios y mostrarlos en consola en formato de texto
  */
 public class Main {
 
     public static void main(String[] args) {
 
-        GestorDatos gestor = new GestorDatos();
+        GestorServicios gestor = new GestorServicios();
+        ArrayList<ServicioTuristico> servicios = gestor.crearServicios();
 
-        //Ruta del archivo dentro de resources
-        ArrayList<Tour> tours = gestor.cargarTours("resources/tours.txt");
-
-        //Recorrido: muestra todos los elementos
-        System.out.println("=== Listado completo de tours ===");
-        for (Tour t : tours) {
-            System.out.println(t);
-        }
-
-        //Filtrado: tours con más de 100 reservas
-        System.out.println("\n=== Tours con más de 100 reservas ===");
-        for (Tour t : tours) {
-            if (t.getReservas() > 100) {
-                System.out.println(t);
-            }
-        }
-
-        //Filtrado: tours de tipo gastronómico
-        System.out.println("\n=== Tours gastronómicos ===");
-        for (Tour t : tours) {
-            if (t.getTipo().equalsIgnoreCase("Gastronómico")) {
-                System.out.println(t);
-            }
-        }
-        //Filtrado: Guias turisticos con mas de 7 años de experiencia
-        System.out.println("\n=== Guias con mas de 7 años de experiencia ===");
-        for (Tour t : tours) {
-            if (t.getGuiaTuristico().getExperiencia() > 7) {
-                System.out.println(t.getGuiaTuristico());
-            }
+        System.out.println("=== Listado de servicios turísticos ===");
+        for (ServicioTuristico s : servicios) {
+            System.out.println(s);
         }
     }
 }
