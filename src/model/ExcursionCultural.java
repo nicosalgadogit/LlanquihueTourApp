@@ -24,6 +24,12 @@ public class ExcursionCultural extends ServicioTuristico {
     }
 
     @Override
+    public void mostrarInformacion() {
+        super.mostrarInformacion();
+        System.out.println("Lugar: " + this.lugarHistorico);
+    }
+
+    @Override
     public String toString() {
         return super.toString() + ", Lugar historico: " + lugarHistorico;
     }

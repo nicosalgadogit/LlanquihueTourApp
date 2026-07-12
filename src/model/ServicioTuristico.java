@@ -42,6 +42,12 @@ public ServicioTuristico() {
     }
 
 
+    public void mostrarInformacion() {
+    System.out.println("Servicio: " + this.nombre);
+        System.out.println("Duracion: " + this.duracionHoras + " horas");
+    }
+
+
     @Override
     public String toString() {
         return "Nombre: " + nombre

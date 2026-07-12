@@ -2,7 +2,7 @@ package ui;
 
 import data.GestorServicios;
 import model.ServicioTuristico;
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Clase Main que se encarga de crear los servicios turísticos
@@ -13,11 +13,12 @@ public class Main {
     public static void main(String[] args) {
 
         GestorServicios gestor = new GestorServicios();
-        ArrayList<ServicioTuristico> servicios = gestor.crearServicios();
+        List<ServicioTuristico> servicios = gestor.crearServicios();
 
         System.out.println("=== Listado de servicios turísticos ===");
         for (ServicioTuristico s : servicios) {
-            System.out.println(s);
+            s.mostrarInformacion();
+            System.out.println("-----");
         }
     }
 }

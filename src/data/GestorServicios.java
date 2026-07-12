@@ -11,14 +11,15 @@ import model.ExcursionCultural;
 import model.PaseoLacustre;
 import model.ServicioTuristico;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class GestorServicios {
 
 
-    public ArrayList<ServicioTuristico> crearServicios(){
+    public List<ServicioTuristico> crearServicios(){
 
-        ArrayList<ServicioTuristico> servicios=new ArrayList();
+        List<ServicioTuristico> servicios=new ArrayList();
 
         //Ruta Gastronomica
         servicios.add(new RutaGastronomica("Ruta del salmon", 3, 4));
@@ -30,8 +31,8 @@ public class GestorServicios {
 
         //Excursiones culturales
 
-        servicios.add(new ExcursionCultural("Excursion Salto del laja", 3, "Montaña del miedo"));
-        servicios.add(new ExcursionCultural("Excursion Volcan Villarica",4, "Volcan Ardiente"));
+        servicios.add(new ExcursionCultural("Montaña del salto", 3, "Excursion Salto del laja"));
+        servicios.add(new ExcursionCultural("Volcan Ardiente",4, "Excursion Volcan Villarica"));
 
         return servicios;
     }

@@ -1,5 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
-# 🧠 Actividad Semana 6 – Desarrollo Orientado a Objetos I
+# 🧠 Actividad Semana 7 – Desarrollo Orientado a Objetos I
 
 ## 👤 Autor del proyecto
 - **Nombre completo:** Nicolas Salgado
@@ -10,7 +10,9 @@
 ---
 
 ## 📘 Descripción general del sistema
-Este proyecto corresponde a la actividad sumativa de la Semana 6 de la asignatura Desarrollo Orientado a Objetos I. Se trata de un sistema orientado a objetos desarrollado en Java para la agencia de turismo Llanquihue Tour, cuyo objetivo esta semana es representar jerárquicamente los distintos tipos de servicios turísticos que ofrece la empresa (rutas gastronómicas, paseos lacustres y excursiones culturales), aplicando **herencia simple**, uso de `super()` y sobrescritura de `toString()`.
+Este proyecto corresponde a la actividad sumativa de la Semana 7 de la asignatura Desarrollo Orientado a Objetos I. Es la continuación del sistema desarrollado para la agencia de turismo Llanquihue Tour, donde esta semana se aplica **polimorfismo** y **colecciones genéricas** sobre la jerarquía de servicios turísticos creada en la Semana 6 (`ServicioTuristico`, `RutaGastronomica`, `PaseoLacustre`, `ExcursionCultural`).
+
+Se incorporó el método `mostrarInformacion()`, sobrescrito en cada subclase, y una colección `List<ServicioTuristico>` que permite almacenar y recorrer dinámicamente distintos tipos de servicios, invocando el comportamiento correcto de cada uno mediante referencias del tipo de la superclase.
 
 ---
 
@@ -27,12 +29,12 @@ Este proyecto corresponde a la actividad sumativa de la Semana 6 de la asignatur
 
 | Clase | Paquete | Descripción |
 |---|---|---|
-| `ServicioTuristico` | `model` | Superclase con atributos comunes `nombre` y `duracionHoras` |
-| `RutaGastronomica` | `model` | Subclase de `ServicioTuristico`, agrega `numeroDeParadas` |
-| `PaseoLacustre` | `model` | Subclase de `ServicioTuristico`, agrega `tipoEmbarcacion` |
-| `ExcursionCultural` | `model` | Subclase de `ServicioTuristico`, agrega `lugarHistorico` |
-| `GestorServicios` | `data` | Crea instancias de prueba de cada subclase de servicio turístico |
-| `Main` | `ui` | Ejecuta el programa y muestra los servicios turísticos por consola |
+| `ServicioTuristico` | `model` | Superclase con atributos comunes `nombre`, `duracionHoras` y método `mostrarInformacion()` |
+| `RutaGastronomica` | `model` | Subclase de `ServicioTuristico`, agrega `numeroDeParadas` y sobrescribe `mostrarInformacion()` |
+| `PaseoLacustre` | `model` | Subclase de `ServicioTuristico`, agrega `tipoEmbarcacion` y sobrescribe `mostrarInformacion()` |
+| `ExcursionCultural` | `model` | Subclase de `ServicioTuristico`, agrega `lugarHistorico` y sobrescribe `mostrarInformacion()` |
+| `GestorServicios` | `data` | Crea una colección `List<ServicioTuristico>` con al menos 5 instancias combinando las distintas subclases |
+| `Main` | `ui` | Recorre la colección con for-each e invoca `mostrarInformacion()` de forma polimórfica |
 | `Tour` | `model` | *(Semana 5)* Representa un tour con nombre, tipo, reservas, guía y dirección |
 | `GuiaTuristico` | `model` | *(Semana 5)* Representa el guía asignado a un tour |
 | `Direccion` | `model` | *(Semana 5)* Representa la dirección donde se realiza el tour |
@@ -50,12 +52,12 @@ git clone https://github.com/nicosalgadogit/LlanquihueTourApp.git
 
 2. Abre el proyecto en IntelliJ IDEA.
 
-3. Ejecuta el archivo `Main.java` desde el paquete `ui`. Se mostrarán por consola las instancias de `RutaGastronomica`, `PaseoLacustre` y `ExcursionCultural` creadas en `GestorServicios`, cada una con su información completa mediante `toString()`.
+3. Ejecuta el archivo `Main.java` desde el paquete `ui`. Se recorrerá la colección de servicios turísticos creada en `GestorServicios` y se mostrará por consola la información de cada uno mediante `mostrarInformacion()`, aplicando polimorfismo (cada subclase imprime su propia información específica).
 
 ---
 
-**Repositorio GitHub:** \[https://github.com/nicosalgadogit/LlanquihueTourApp ] 
-**Fecha de entrega:** \[fecha de entrega semana 6]
+**Repositorio GitHub:** \[https://github.com/nicosalgadogit/LlanquihueTourApp]
+**Fecha de entrega:** \[fecha de entrega semana 7]
 
 ---
 
