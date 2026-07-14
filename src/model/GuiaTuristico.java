@@ -2,7 +2,7 @@ package model;
 /**
  * Clase composicion de la clase Tour que representa el guia turistico
  */
-public class GuiaTuristico {
+public class GuiaTuristico implements Registrable {
 
     private String nombre;
     private String cargo;
@@ -80,5 +80,19 @@ public class GuiaTuristico {
                 ", Cargo: " + cargo +
                 ", Años de experiencia: " + experiencia;
 
+    }
+
+
+
+    /**
+     * Metodo mostrarResumen()
+     * muestra el resumen del guia turistico
+     *
+     */
+
+    @Override
+    public void mostrarResumen() {
+        System.out.println("Guia Turistico: " + nombre + " | Cargo: " +
+                cargo + " | Experiencia: " + experiencia + "años");
     }
 }
